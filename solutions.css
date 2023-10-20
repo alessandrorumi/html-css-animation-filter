@@ -184,3 +184,79 @@ ex-12-button {
   } 
 }
 
+/* SOLUZIONE ES. 13 */
+
+ex-13-button {
+  position: relative;
+}
+
+.ex-13-top-white, .ex-13-bottom-white {
+  position: absolute;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: animation-13up;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-13up {
+  0% { 
+    top: -10px;
+    left: 10%;
+  } 
+  20% { 
+    top: -10px;
+    left: calc(100% - 30px);
+  }
+  40% { 
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
+  60% { 
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+  80% { 
+    top: -10px;
+    left: -30px;
+  }
+  100% { 
+    top: -10px;
+    left: 10%;
+  } 
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: animation-13down;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-13down {
+  0% { 
+    bottom: -10px;
+    right: 20%;
+  } 
+  20% { 
+    bottom: -10px;
+    right: calc(100% - 30px);
+  }
+  40% { 
+    bottom: calc(100% - 10px);
+    right: calc(100% - 30px);
+  }
+  60% { 
+    bottom: calc(100% - 10px);
+    right: -30px;
+  }
+  80% { 
+    bottom: -10px;
+    right: -30px;
+  }
+  100% { 
+    bottom: -10px;
+    right: 20%;
+  } 
+}
+
