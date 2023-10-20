@@ -58,6 +58,17 @@
   filter: grayscale(1);
 }
 
+/* SOLUZIONE ES. 7 */
+
+.ex-7-img {
+  transition: filter 3s ease;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(1);
+  filter: saturate(0.2);
+}
+
 /* SOLUZIONE ES. 8 */
 
 .ex-8-img {
@@ -120,3 +131,14 @@
     transform: rotate(0deg); 
   } 
 }
+
+/* SOLUZIONE ES. 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: animation-12;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+
+
