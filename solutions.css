@@ -82,3 +82,23 @@
   border-radius: 20px;
   transform: scale(1.5);
 }
+
+/* SOLUZIONE ES. 11 */
+
+.ex-11-icon:hover {
+  animation-name: animation-11;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-11 {
+  0% { 
+      transform: rotate(0deg); 
+  } 
+  90% { 
+      transform: rotate(315deg); 
+  }
+  100% { 
+    transform: rotate(0deg); 
+  } 
+}
