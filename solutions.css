@@ -122,10 +122,10 @@
 
 @keyframes animation-11 {
   0% { 
-      transform: rotate(0deg); 
+    transform: rotate(0deg); 
   } 
   90% { 
-      transform: rotate(315deg); 
+    transform: rotate(315deg); 
   }
   100% { 
     transform: rotate(0deg); 
@@ -134,11 +134,53 @@
 
 /* SOLUZIONE ES. 12 */
 
+ex-12-button {
+  position: relative;
+}
+
+.ex-12-top-white, .ex-12-bottom-white {
+  position: absolute;
+}
+
 .ex-12-button:hover .ex-12-top-white {
-  animation-name: animation-12;
-  animation-duration: 1s;
+  animation-name: animation-12up;
+  animation-duration: 2s;
   animation-timing-function: linear;
 }
 
+@keyframes animation-12up {
+  0% { 
+    top: -10px;
+    left: 10%;
+  } 
+  50% { 
+    top: -10px;
+    left: calc(100% - 60px);
+  }
+  100% { 
+    top: -10px;
+    left: 10%;
+  } 
+}
 
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: animation-12down;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes animation-12down {
+  0% { 
+    bottom: -10px;
+    right: 20%;
+  } 
+  50% { 
+    bottom: -10px;
+    right: calc(100% - 60px);
+  }
+  100% { 
+    bottom: -10px;
+    right: 20%;
+  } 
+}
 
